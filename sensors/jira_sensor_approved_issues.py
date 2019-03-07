@@ -30,7 +30,7 @@ class JIRASensorApprovedIssues(PollingSensor):
         self._project = None
         self._issues_in_project = None
         self._jql_query = None
-        self._trigger_name = 'issues_tracker_for_apiv2'
+        self._trigger_name = 'jira_sensor_new_approved_issues'
         self._trigger_pack = 'jira'
         self._trigger_ref = '.'.join([self._trigger_pack, self._trigger_name])
 
