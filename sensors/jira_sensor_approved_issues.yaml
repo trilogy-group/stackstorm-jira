@@ -1,0 +1,26 @@
+---
+  class_name: "JIRASensorApprovedIssues"
+  entry_point: "jira_sensor_approved_issues.py"
+  description: "Sensor which monitors JIRA for new approved tickets"
+  poll_interval: 30
+  trigger_types:
+    -
+      name: "jira_sensor_new_approved_issues"
+      description: "Trigger which indicates that a new approved issue has been created"
+      payload_schema:
+        type: "object"
+        properties:
+          project:
+            type: "string"
+          id:
+            type: "string"
+          expand:
+            type: "string"
+          issue_key:
+            type: "string"
+          issue_url:
+            type: "string"
+          issue_browse_url:
+            type: "string"
+          fields:
+            type: "object"
