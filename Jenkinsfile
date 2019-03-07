@@ -1,7 +1,7 @@
 pipeline{
     environment {
         DOCKER_WKSPCE = '/opt/st2-docker'
-        PACK_NAME='jira'
+        PACK_NAME='stackstorm-jira'
     }
     parameters {
         string(name: 'HOSTNAME', defaultValue: 'stackstorm.aureacentral.com', description: 'Enter vm ip address')
